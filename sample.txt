@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maha Mithash | Kaju</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #FFF8F0;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: #8B4513;
+            color: white;
+        }
+
+            nav h1 {
+                margin: 0;
+            }
+
+            /* NAV LINKS */
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin-left: 25px;
+                font-weight: 500;
+                transition: 0.3s;
+            }
+
+                nav a:hover {
+                    color: #D4A373;
+                }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(rgba(255,248,240,0.8), rgba(255,248,240,0.95)), 
+                url('https://tse3.mm.bing.net/th/id/OIP._Hd9-eZDostLGvl-3cAiMgHaLG?pid=ImgDet&w=199&h=298&c=7&dpr=1.3&o=7&rm=3');
+            background-size: cover;
+            background-position: center;
+        }
+        
+
+            .hero h2 {
+                font-size: 50px;
+                color: #8B4513;
+            }
+
+            .hero p {
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+
+        .btn {
+            padding: 12px 30px;
+            background: green;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+            .btn:hover {
+                background: green;
+            }
+
+        /* PRODUCTS */
+        .products {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 25px;
+            width: 260px;
+            border-radius: 15px;
+            border: 1px solid #f1e3d3;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+
+            .card:hover {
+                transform: translateY(-8px);
+            }
+
+        .price {
+            color: #2a9d8f;
+            font-weight: bold;
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 60px 20px;
+            text-align: center;
+            background: #FAEDCD;
+        }
+
+        /* INGREDIENTS */
+        .ingredients {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+            .ingredients ul {
+                list-style: none;
+                padding: 0;
+            }
+
+        /* REVIEWS */
+        .reviews {
+            background: #F8F9FA;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* WHY */
+        .why {
+            padding: 60px 20px;
+            text-align: center;
+            background: #FAEDCD;
+        }
+        .card img {
+            transition: 0.3s;
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+        .card img{
+            width: 100%;
+            height:180px;
+            object-fit: contain;
+            background:#fff;
+        }
+
+        blockquote{
+            color: #bf1c9a
+        }
+
+
+        /* FOOTER */
+        footer {
+            background: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body> 
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1>Maha Mithash 🍬</h1>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <h2>Masala Kaju</h2>
+        <p>Crispy • Tasty • Perfect with Tea ☕</p>
+        <p class="blockquote" >“Taste the crunch, feel the love.” </p>
+        <a href="#products" class="btn">Order Now</a>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="products">
+        <h2>Our Packs</h2>
+        <div class="cards">
+
+            <!-- SMALL PACK -->
+            <div class="card">
+                <img src="images/ChatGPT Image Mar 31, 2026, 10_17_08 AM.png" alt="Small Pack">
+                <h3>Small Pack</h3>
+                <p>Perfect for quick snack</p>
+                <p class="price">₹20</p>
+            </div>
+
+            <!-- MEDIUM PACK -->
+            <div class="card">
+                <img src="images/kaju50.png" alt="Medium Pack">
+                <h3>Medium Pack</h3>
+                <p>Best for daily tea time</p>
+                <p class="price">₹50</p>
+            </div>
+
+            <!-- FAMILY PACK -->
+            <div class="card">
+                <img src="images/kaju100 updated.png" alt="Family Pack">
+                <h3>Family Pack</h3>
+                <p>Enjoy with family</p>
+                <p class="price">₹100</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>Our Story</h2>
+        <p>
+        
+            Maha Mithash started with a simple dream — to bring the authentic taste of homemade snacks to every home.
+            What began in a small kitchen with love and passion has now become a trusted name for crispy and delicious treats.
+
+            Our special “Raju Ke Kaju” is prepared fresh every day using high-quality ingredients, traditional recipes,
+            and a lot of care. We believe that good food is not just about taste, but also about purity and happiness.
+
+            Every bite of our kaju carries the warmth of home and the joy of sharing moments with your loved ones.
+        
+        </p>
+    </section>
+
+    <!-- INGREDIENTS -->
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>✔ Wheat Flour (Maida)</li>
+            <li>✔ Salt</li>
+            <li>✔ Ajwain</li>
+            <li>✔ Edible Oil</li>
+            <li>✔ Black Pepper</li>
+            <li>✔ Turmeric</li>
+        </ul>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <p>"Very crispy and tasty!" ⭐⭐⭐⭐⭐</p>
+        <p>"Perfect snack with chai" ⭐⭐⭐⭐⭐</p>
+        <p>"Feels like homemade" ⭐⭐⭐⭐⭐</p>
+    </section>
+
+    <!-- WHY -->
+    <section class="why">
+        <h2>Why Choose Us?</h2>
+        <p>✔ Fresh Daily</p>
+        <p>✔ No Chemicals</p>
+        <p>✔ Hygienic Preparation</p>
+        <p>✔ Affordable Price</p>
+    </section>
+
+    <!-- FOOTER (CONTACT) -->
+    <footer id="contact">
+        <p>📞 Contact: 8303484340</p>
+        <address>
+            You can contact us directly at <a mailto="guptakavya6390@gmail.com">guptakavya6390@gmail.com</a>.
+        </address>
+    </footer>
+
+</body>
+</html>
